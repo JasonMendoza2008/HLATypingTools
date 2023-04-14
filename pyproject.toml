@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^2.0.0"
+openpyxl = "^3.1.2"
+pyaescrypt = "^6.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.3.0"

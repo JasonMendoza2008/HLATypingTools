@@ -1,5 +1,6 @@
 # Encrypted secrets
 encrypting_files.ipynb
+data/data.pickle
 
 # IDE
 .idea
