@@ -3,6 +3,7 @@
 ## Getting Started
 #### Install from PyPI (recommended)
 To use `HLATypingTools`, run `pip install HLATypingTools` in your terminal.
+All python packages necessary for `HLATypingTools` will automatically be downloaded.
 
 #### Usage
 If you haven't decrypted the data yet (first time you are using the package and you did request access to the product),
