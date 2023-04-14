@@ -9,5 +9,15 @@ except FileNotFoundError:
     logging.error("Error 1: Decrypt the file first")
     exit(1)
 
+
+def get_locus(allele: str) -> str:
+    """
+    Get locus from allele
+    :param allele: allele
+    :return: locus
+    """
+    return "HLA_" + allele.split("*")[0]
+
+
 def get_allele_info(allele: str) -> str:
     return allele
