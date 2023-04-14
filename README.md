@@ -32,6 +32,18 @@ from hlatypingtools.get_info import get_locus
 print(get_locus("A*01:01"))  # will output HLA_A
 ```
 
+Or as follows:
+```py
+from hlatypingtools.get_info import get_same_low_res_broad, get_same_low_res_assigned_type
+broad = "DQ3"
+print("DQB1*03:01" in get_same_low_res_broad(broad))  # will output True
+print("DQB1*03:02" in get_same_low_res_broad(broad))  # will output True
+
+assigned_type = "DQ7"
+print("DQB1*03:01" in get_same_low_res_assigned_type(assigned_type))  # will output True
+print("DQB1*03:02" in get_same_low_res_assigned_type(assigned_type))  # will output False
+```
+
 #### Exit codes
 ```
 0: Wrong password.
