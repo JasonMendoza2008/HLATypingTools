@@ -8,7 +8,7 @@ def decrypt_file(password: str) -> None:
         pyAesCrypt.decryptFile("data/data.pickle.aes", f"data/data.pickle", password)
         print("File decrypted successfully")
     except ValueError:
-        print("Wrong password, please contact lhotteromain@gmail.com to purchase the product")
+        print("Wrong password, please contact lhotteromain@gmail.com to request access to the product")
 
 
 def open_pickle_file() -> dict[str, pd.DataFrame]:

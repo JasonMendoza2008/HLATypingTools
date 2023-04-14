@@ -5,7 +5,7 @@
 To use `HLATypingTools`, run `pip install HLATypingTools` in your terminal.
 
 #### Usage
-If you haven't decrypted the data yet (first time you are using the package and you did purchase the product),
+If you haven't decrypted the data yet (first time you are using the package and you did request access to the product),
 run:
 ```py
 from hlatypingtools.decrypt_file import decrypt_file
