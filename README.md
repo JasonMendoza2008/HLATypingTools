@@ -32,7 +32,7 @@ from hlatypingtools.get_info import get_locus
 print(get_locus("A*01:01"))  # will output HLA_A
 ```
 
-Or as follows:
+Or as follows (to output all possible high-resolution alleles for a given low-resolution typing):
 ```py
 from hlatypingtools.get_info import get_same_low_res_broad, get_same_low_res_assigned_type
 broad = "DQ3"
