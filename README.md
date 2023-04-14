@@ -21,8 +21,9 @@ Then you can use the package as follows:
 ```
 
 #### Exit codes
-```py
-
+```
+0: Wrong password.
+1: Tried to acess the functions of the package without decrypting the data first.
 ```
 
 ## About the source code
