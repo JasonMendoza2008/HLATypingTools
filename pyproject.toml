@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hlatypingtools"
+version = "0.1.0"
+description = ""
+authors = ["JasonMendoza2008 <lhotteromain@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.0"
+pytest-mypy = "^0.10.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
