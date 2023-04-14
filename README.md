@@ -17,13 +17,26 @@ It should print `File decrypted successfully`.
 
 Then you can use the package as follows:
 ```py
+from hlatypingtools.get_info import get_allele_info
 
+allele: str = "A*01:01"
+print(get_allele_info(allele, "Broad"))  # will output A1
+print(get_allele_info(allele, "G Group"))  # will output A*01:01:01G
+print(get_allele_info(allele, "P Group"))  # will output A*01:01P
+print(get_allele_info(allele, "% locus"))  # will output 11.906
+```
+
+Or as follows:
+```py
+from hlatypingtools.get_info import get_locus
+print(get_locus("A*01:01"))  # will output HLA_A
 ```
 
 #### Exit codes
 ```
 0: Wrong password.
 1: Tried to acess the functions of the package without decrypting the data first.
+2: type_info requested is not available.
 ```
 
 ## About the source code
