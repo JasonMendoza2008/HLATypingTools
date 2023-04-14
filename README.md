@@ -37,6 +37,8 @@ print(get_locus("A*01:01"))  # will output HLA_A
 0: Wrong password.
 1: Tried to acess the functions of the package without decrypting the data first.
 2: type_info requested is not available.
+3: wrong format for a low-resolution input. Has to be of the form A1, B7, Cw1, DR1, DQ3, DQA1*01, DR52, DPB1*01, or 
+DPA1*01.
 ```
 
 ## About the source code
