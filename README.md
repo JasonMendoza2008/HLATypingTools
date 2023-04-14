@@ -32,7 +32,7 @@ from hlatypingtools.get_info import get_locus
 print(get_locus("A*01:01"))  # will output HLA_A
 ```
 
-Or as follows (to output all possible high-resolution alleles for a given low-resolution typing):
+Or as follows to output all possible high-resolution alleles for a given low-resolution typing:
 ```py
 from hlatypingtools.get_info import get_same_low_res_broad, get_same_low_res_assigned_type
 broad = "DQ3"
@@ -43,6 +43,9 @@ assigned_type = "DQ7"
 print("DQB1*03:01" in get_same_low_res_assigned_type(assigned_type))  # will output True
 print("DQB1*03:02" in get_same_low_res_assigned_type(assigned_type))  # will output False
 ```
+Note:
+- Broad = something like A1, B7, Cw1, DR1, **DQ3** (!!!), DQA1&ast;01, DR52, DPB1&ast;01, or DPA1&ast;01),
+- Assigned Type = something like A1, B7, Cw1, DR1, **DQ7** (!!!), DQA1&ast;01, DR52, DPB1&ast;01, or DPA1&ast;01)
 
 #### Exit codes
 ```
