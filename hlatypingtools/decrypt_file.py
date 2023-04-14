@@ -6,6 +6,7 @@ import pyAesCrypt  # type: ignore
 def decrypt_file(password: str) -> None:
     try:
         pyAesCrypt.decryptFile("data/data.pickle.aes", f"data/data.pickle", password)
+        print("File decrypted successfully")
     except ValueError:
         print("Wrong password, please contact lhotteromain@gmail.com to purchase the product")
 

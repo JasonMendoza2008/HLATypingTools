@@ -13,6 +13,7 @@ from hlatypingtools.decrypt_file import decrypt_file
 password: str = "___"   # Replace with password provided by the author 
 decrypt_file(password)
 ```
+It should print `File decrypted successfully`.
 
 Then you can use the package as follows:
 ```py
