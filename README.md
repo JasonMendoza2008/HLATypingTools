@@ -44,8 +44,8 @@ print("DQB1*03:01" in get_same_low_res_assigned_type(assigned_type))  # will out
 print("DQB1*03:02" in get_same_low_res_assigned_type(assigned_type))  # will output False
 ```
 Note:
-- Broad = something like A1, B7, Cw1, DR1, **DQ3** (!!!), DQA1&ast;01, DR52, DPB1&ast;01, or DPA1&ast;01),
-- Assigned Type = something like A1, B7, Cw1, DR1, **DQ7** (!!!), DQA1&ast;01, DR52, DPB1&ast;01, or DPA1&ast;01)
+- Broad = something like A1, B7, Cw1, DR1, **DQ3** (!!!), DQA1&ast;01, DR52, DPB1&ast;01, or DPA1&ast;01,
+- Assigned Type = something like A1, B7, Cw1, DR1, **DQ7** (!!!), DQA1&ast;01, DR52, DPB1&ast;01, or DPA1&ast;01
 
 #### Exit codes
 ```
