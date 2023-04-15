@@ -1,12 +1,18 @@
 # Only needs to be run once
 import logging
 import pandas as pd
+import os
 import pickle
 import pyAesCrypt  # type: ignore
 
 def decrypt_file(password: str) -> None:
+    path_this_file: str = os.path.dirname(os.path.abspath(__file__))
     try:
-        pyAesCrypt.decryptFile("data/data.pickle.aes", f"data/data.pickle", password)
+        pyAesCrypt.decryptFile(
+            path_this_file  + "data/data.pickle.aes",
+            path_this_file + "data/data.pickle",
+            password
+        )
         logging.info("File decrypted successfully")
     except ValueError:
         logging.error(

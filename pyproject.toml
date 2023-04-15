@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hlatypingtools"
-version = "1.0.0"
+version = "1.0.2"
 description = ""
 authors = ["JasonMendoza2008 <lhotteromain@gmail.com>"]
 readme = "README.md"
