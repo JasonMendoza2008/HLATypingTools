@@ -16,6 +16,8 @@ def get_locus(allele: str) -> str:
     :param allele: allele
     :return: locus
     """
+    if "DRB3" in allele or "DRB4" in allele or "DRB5" in allele:
+        return "HLA_DRB345"
     return "HLA_" + allele.split("*")[0]
 
 
@@ -60,7 +62,7 @@ def get_allele_info(
     :param type_info: can be one of the following: ["% locus", "% first-field", ,"% individuals",
     "Expert", "WHO", "NN", "G Group", "P Group", "Broad", "Assigned Type"]
 
-    :return:
+    :return: info asked
     """
     if type_info not in [
         "% locus",

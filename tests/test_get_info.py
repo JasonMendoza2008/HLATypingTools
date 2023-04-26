@@ -15,13 +15,18 @@ def test_get_locus_drb1() -> None:
     expected_locus = "HLA_DRB1"
     assert get_locus(allele) == expected_locus
 
+def test_get_locus_drb3() -> None:
+    allele = "DRB3*01:01"
+    expected_locus = "HLA_DRB345"
+    assert get_locus(allele) == expected_locus
+
 def test_get_locus_c() -> None:
     allele = "C*07:01"
     expected_locus = "HLA_C"
     assert get_locus(allele) == expected_locus
 
 def test_get_info_a0101() -> None:
-    allele = "A*01:01"
+    allele: str = "A*01:01"
     expected_info_percent_locus = 11.906
     expected_info_percent_first_field = 97.856
     expected_info_p_group = "A*01:01P"
@@ -32,6 +37,11 @@ def test_get_info_a0101() -> None:
     assert get_allele_info(allele, "P Group") == expected_info_p_group
     assert get_allele_info(allele, "Broad") == expected_info_broad
     assert get_allele_info(allele, "Assigned Type") == expected_info_assigned_type
+
+def test_get_info_drb3() -> None:
+    allele: str = "DRB3*01:01"
+    expected_info_broad = "DR52"
+    assert get_allele_info(allele, "Broad") == expected_info_broad
 
 def test_get_same_low_res_broad() -> None:
     broad = "A1"
