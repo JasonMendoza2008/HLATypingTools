@@ -115,3 +115,10 @@ def test_dq3_dq7() -> None:
     assigned_type = "DQ7"
     assert "DQB1*03:01" in get_same_low_res_assigned_type(assigned_type)
     assert "DQB1*03:02" not in get_same_low_res_assigned_type(assigned_type)
+
+
+def test_b7() -> None:
+    expected_assigned_type: str = "B57"
+    allele: str = "B*57:73"
+
+    assert get_allele_info(allele, "Assigned Type") == expected_assigned_type
