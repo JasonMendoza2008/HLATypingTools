@@ -95,11 +95,10 @@ def get_same_low_res_broad(low_res: str) -> list[str]:
 def get_same_low_res_assigned_type(low_res: str) -> list[str]:
     """
     Get all the alleles that share the same Assigned Type
-    :param low_res: broad type (e.g. A1, B7, Cw1, DR1, DQ7, DQA1*01, DR52, DPB1*01, DPA1*01)
+    :param low_res: broad type (e.g. A1, B7, Cw14, DR1, DQ7, DQA1*01, DR52, DPB1*01, DPA1*01)
     :return: list of alleles that share the same broad type
     """
 
     locus = get_locus_from_low_res(low_res)
     rows_same_broad = DATA[locus][DATA[locus]["Assigned Type"] == low_res]
     return rows_same_broad.index.tolist()
-

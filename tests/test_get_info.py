@@ -122,3 +122,15 @@ def test_b7() -> None:
     allele: str = "B*57:73"
 
     assert get_allele_info(allele, "Assigned Type") == expected_assigned_type
+
+def test_c14() -> None:
+    # Assigned Type
+    expected_assigned_type: str = "Cw14"
+    allele: str = "C*14:02"
+
+    assert get_allele_info(allele, "Assigned Type") == expected_assigned_type
+
+    # Broad
+    expected_broad: str = "Cw1"
+
+    assert get_allele_info(allele, "Broad") == expected_broad
