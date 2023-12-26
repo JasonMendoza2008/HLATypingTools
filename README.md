@@ -22,6 +22,7 @@ from hlatypingtools.get_info import get_allele_info
 
 allele: str = "A*01:01"
 print(get_allele_info(allele, "Broad"))  # will output A1
+print(get_allele_info(allele, "Assigned Type"))  # will output A1
 print(get_allele_info(allele, "G Group"))  # will output A*01:01:01G
 print(get_allele_info(allele, "P Group"))  # will output A*01:01P
 print(get_allele_info(allele, "% locus"))  # will output 11.906
