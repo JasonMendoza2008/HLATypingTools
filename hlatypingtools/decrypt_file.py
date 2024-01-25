@@ -15,7 +15,7 @@ def decrypt_file(password: str) -> None:
             PATH_THIS_FILE + "/data/data.pickle",
             password
         )
-        logging.info("File decrypted successfully")
+        logging.info("File decrypted successfully. Restart Kernel / Python.")
     except ValueError:
         logging.error(
             "Error 0: Wrong password, please contact lhotteromain@gmail.com to request access to the product."
