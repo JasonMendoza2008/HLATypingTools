@@ -6,8 +6,7 @@ import pandas as pd
 try:
     DATA: dict[str, pd.DataFrame] = hlatypingtools.decrypt_file.open_pickle_file()
 except FileNotFoundError:
-    logging.error("Error 1: Decrypt the file first")
-    exit(1)
+    logging.warning("Error 1: Decrypt the file first, otherwise product won't work.")
 
 
 def get_locus(allele: str) -> str:
