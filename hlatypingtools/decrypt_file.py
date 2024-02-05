@@ -6,6 +6,7 @@ import pickle
 import pyAesCrypt  # type: ignore
 
 PATH_THIS_FILE: str = os.path.dirname(os.path.abspath(__file__))
+logging.basicConfig(level=logging.INFO)
 
 
 def decrypt_file(password: str) -> None:
