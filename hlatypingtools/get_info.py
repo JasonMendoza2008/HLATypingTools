@@ -1,6 +1,7 @@
 import hlatypingtools.decrypt_file
 import logging
 import pandas as pd
+import typing
 
 
 try:
@@ -54,14 +55,14 @@ def get_locus_from_low_res(low_res: str) -> str:
 def get_allele_info(
     allele: str,
     type_info: str,
-) -> str:
+) -> typing.Any:
     """
     Get allele info, for a given type of info
     :param allele: allele
     :param type_info: can be one of the following: ["% locus", "% first-field", ,"% individuals",
-    "Expert", "WHO", "NN", "G Group", "P Group", "Broad", "Assigned Type"]
+    "Expert", "WHO", "NN", "G Group", "P Group", "Broad", "Assigned Type", "Scrapped date"]
 
-    :return: info asked
+    :return: info asked (str or float)
     """
     if type_info not in [
         "% locus",
@@ -74,6 +75,7 @@ def get_allele_info(
         "P Group",
         "Broad",
         "Assigned Type",
+        "Scrapped date",
     ]:
         logging.error("Error 2: type_info not valid")
     return DATA[get_locus(allele)].loc[allele][type_info]

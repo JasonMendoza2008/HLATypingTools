@@ -142,3 +142,8 @@ def test_dr9() -> None:
     allele: str = "DRB1*09:02"
 
     assert get_allele_info(allele, "Assigned Type") == expected_assigned_type
+
+    # Scrapped date
+    expected_scrapped_date: str = "YYYY/MM/DD: 2024/03/06"
+    assert get_allele_info(allele, "Scrapped date") == expected_scrapped_date
+    
